@@ -1,0 +1,23 @@
+{
+  "name": "sdetpro_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangbui23/sdetpro_javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hangbui23/sdetpro_javascript/issues"
+  },
+  "homepage": "https://github.com/hangbui23/sdetpro_javascript#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
