@@ -12,14 +12,14 @@ bankAccount2.accountNumber = '5689321';
 
 let bankAccounts = [bankAccount1, bankAccount2]
 
-function findAccount(accountNumner) {
+function findAccountNumber(accountNumner) {
     return bankAccounts.find(acc => acc.accountNumber === accountNumner);
 }
 
 function updateBalance(account, amount) {
     if (Number.isNaN(amount) || amount <= 0) {
-        console.log('Invalid amount. Please enter a valid number greater than or equal to 0.');
-    } else if (account.balance > amount) {
+        console.log('Invalid amount. Please enter a valid number greater than 0.');
+    } else if (account.balance >= amount) {
         account.balance -= amount;
         console.log(`Balance updated successfully. New balance is ${account.balance}`);
     } else {
@@ -27,7 +27,7 @@ function updateBalance(account, amount) {
     }
 }
 
-function DisplayAccount(account) {
+function displayAccount(account) {
     console.log('Account Number: ' + account.accountNumber);
     console.log('Balance: ' + account.balance);
 }
@@ -45,11 +45,11 @@ while (choice !== 0) {
     }
     else {
         let accountNumber = readLine.question('Input your account number: ');
-        let account = findAccount(accountNumber);
+        let account = findAccountNumber(accountNumber);
         switch (choice) {
             case 1:
                 if (account) {
-                    DisplayAccount(account)
+                    displayAccount(account)
                 }
                 else {
                     console.log(`Account ${accountNumber} not found!`);
