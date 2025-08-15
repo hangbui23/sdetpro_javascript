@@ -2,7 +2,7 @@ let readLine = require('readline-sync');
 
 const GET_POST_URL = "https://jsonplaceholder.typicode.com/posts"
 
-async function main(){
+async function Program(){
 console.log("========Menu=========");
 console.log("1. Get post by userId and postId");
 console.log("2. Get all posts by userId");
@@ -75,4 +75,4 @@ function displayPostByUserId(posts) {
     }
 }
 
-main();
+Program();
